@@ -1,1 +1,70 @@
 /*嚮應式語法寫在這*/
+/* 網頁版 */
+@media (min-width: 593px) {
+    .icon {
+        margin: 10px;
+        width: 40px;
+        height: 40px;
+    }
+    .logo {
+        margin: 15px 0;
+    }
+
+    .nav-list-web {
+        display: flex;
+    }
+
+    .nav-list-item {
+        display: table;
+        height: 100%;
+        margin: 0 20px;
+    }
+
+    .nav-list-item > a {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .yellow-waxing {
+        position: relative;
+        overflow: hidden;
+        background: url("../images/yellow-web/01-bg.png");
+    }
+
+    .yellow-waxing-container {
+        width: 772px;
+        margin: 0 auto;
+    }
+
+    .yellow-waxing-word {
+        position: absolute;
+        max-width: initial;
+        max-height: initial;
+        top: 135px;
+        left: -430px;
+    }
+
+    .yellow-waxing-btn {
+        top: 358px;
+        left: 15px;
+    }
+
+    .about {
+        background: url("../images/yellow-web/02-bg.png");
+    }
+    .space {
+        background: url("../images/yellow-web/03-bg.png");
+    }
+    .service {
+        background: url("../images/yellow-web/04-bg.png");
+    }
+    .amenities {
+        background: url("../images/yellow-web/05-bg.png");
+    }
+    .qa {
+        background: url("../images/yellow-web/06-bg.png");
+    }
+    .stores {
+        background: url("../images/yellow-web/07-bg.png");
+    }
+}

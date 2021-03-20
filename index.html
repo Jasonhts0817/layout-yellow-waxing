@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>SharkEC 靜態切版範例</title>
+    <title>Yellow Waxnig 野裸</title>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,14 +16,16 @@
     </link>
     <link href="css/theme-color.css?t=20200405" rel="stylesheet" type="text/css">
     </link>
-    <link href="css/theme-rwd.css?t=20200405" rel="preload" as="style">
-    </link>
-    <link href="css/theme-rwd.css?t=20200405" rel="stylesheet" type="text/css">
-    </link>
     <link href="css/theme.css?t=20200405" rel="preload" as="style">
     </link>
     <link href="css/theme.css?t=20200405" rel="stylesheet" type="text/css">
     </link>
+    <link href="css/theme-rwd.css?t=20200405" rel="preload" as="style">
+    </link>
+    <link href="css/theme-rwd.css?t=20200405" rel="stylesheet" type="text/css">
+    </link>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500;700;900&display=swap" rel="stylesheet">
     <script>
         var MYAPP = {
 
@@ -34,12 +36,118 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
+        <!-- mobile -->
+        <div class="visible-xs-block">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="/images/yellow-web/01-logo.png" width="164" height="67" alt="Yellow Waxing 野裸">
+                </div>
+                <div id="nav-menu" class="nav-menu"></div>
+            </div>
+
+            <ul id="nav-list" class="nav-list">
+                <li class="nav-list-item"><a href="#" data-content="about"></a></li>
+                <li class="nav-list-item"><a href="#" data-content="service"></a></li>
+                <li class="nav-list-item"><a href="#" data-content="space"></a></li>
+                <li class="nav-list-item"><a href="#" data-content="amenities"></a></li>
+                <li class="nav-list-item"><a href="#" data-content="qa"></a></li>
+                <li class="nav-list-item"><a href="#" data-content="store"></a></li>
+                <li class="nav-list-item"><a href="#" data-content="blog"></a></li>
+                <li class="nav-list-item">
+                    <a href="#" class="icon icon-ig"></a>
+                    <a href="#" class="icon icon-fb"></a>
+                </li>
+            </ul>
+        </div>
+        <!-- web -->
+        <div class="hidden-xs container-fluid">
+            <div class="nav-container">
+                <ul class="nav-list-web">
+                    <li class="nav-list-item"><a href="#">ABOUT</a></li>
+                    <li class="nav-list-item"><a href="#">SERVICE</a></li>
+                    <li class="nav-list-item"><a href="#">SPACE</a></li>
+                    <li class="nav-list-item"><a href="#">AMENITIES</a></li>
+                    <li class="nav-list-item"><a href="#">Q&A</a></li>
+                    <li class="nav-list-item"><a href="#">STORE</a></li>
+                    <li class="nav-list-item"><a href="#">BLOG</a></li>
+                    <li class="nav-list-item">
+                        <a href="#">
+                            <img class="icon" src="/images/yellow-web/01-fb-icon.png" width="40" height="40" alt="fb">
+                        </a>
+                        <a href="#">
+                            <img class="icon" src="/images/yellow-web/01-ig-icon.png" width="40" height="40" alt="ig">
+                        </a>
+                    </li>
+                </ul>
+                <div class="logo">
+                    <img src="/images/yellow-web/01-logo.png" width="164" height="67" alt="Yellow Waxing 野裸">
+                </div>
+            </div>
+        </div>
     </header>
-    <section>
+    <!-- YELLOW WAXING -->
+    <section class="yellow-waxing">
+        <!-- mobile -->
+        <div class="yellow-waxing-container visible-xs-block">
+            <img class="yellow-waxing-ph" src="/images/yellow-mobile/01-ph.png" alt="Yellow Waxing 野裸">
+            <a href="https://www.google.com" class="yellow-waxing-btn">
+                <img src="/images/yellow-mobile/01-bt02.png" alt="即刻預約">
+            </a>
+            <img class="yellow-waxing-word" src="/images/yellow-mobile/01-yellow-waxing.png" alt="Yellow Waxing 野裸">
+        </div>
+        <!-- web -->
+        <div class="yellow-waxing-container hidden-xs">
+            <img src="/images/yellow-web/01-ph.png" alt="Yellow Waxing 野裸">
+            <a href="https://www.google.com" class="yellow-waxing-btn">
+                <img src="/images/yellow-web/01-bt.png" alt="即刻預約">
+            </a>
+            <img class="yellow-waxing-word" src="/images/yellow-web/01-yallow-waxing.png" alt="Yellow Waxing 野裸">
+        </div>
+    </section>
+    <!-- ABOUT -->
+    <section class="about">
+        <div>
+            <div>
+                <img>
+            </div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+    <!-- SEVICE -->
+    <section class="service">
+    </section>
+    <!-- SPACE -->
+    <section class="space">
+    </section>
+    <!-- AMENITIES -->
+    <section class="amenities">
+    </section>
+    <!-- Q&A -->
+    <section class="qa">
+    </section>
+    <!-- STORES -->
+    <section class="stores">
     </section>
     <footer>
     </footer>
+    <script>
+        $(document).ready(function () {
+            $("#nav-menu").click(function () {
+                $("#nav-menu").toggleClass("active")
+                $("#nav-list").toggleClass("active")
+
+                $("body").toggleClass('active')
+            })
+        })
+    </script>
 </body>
 
 </html>

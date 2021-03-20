@@ -1,2 +1,6 @@
 @import url("reset.css");
 /*覆寫基本版型語法寫這*/
+.container-fluid {
+    padding-right: 100px;
+    padding-left: 100px;
+}

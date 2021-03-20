@@ -1,0 +1,185 @@
+:root {
+    --black: #000000;
+    --blue: #1da5d4;
+    --white: #ffffff;
+    --yellow: #fbd743;
+}
+
+body.active {
+    overflow-y: hidden;
+}
+.icon {
+    margin: 10px auto;
+    width: 71px;
+    height: 71px;
+}
+
+.icon-fb {
+    background-image: url("../images/yellow-mobile/01-menu-fb-w.png");
+}
+
+.icon-fb:hover {
+    background-image: url("../images/yellow-mobile/01-menu-fb-y.png");
+}
+
+.icon-ig {
+    background-image: url("../images/yellow-mobile/01-menu-ig-w.png");
+}
+
+.icon-ig:hover {
+    background-image: url("../images/yellow-mobile/01-menu-ig-y.png");
+}
+
+.logo {
+    width: 164px;
+    margin: 30px 0;
+}
+
+.header {
+    width: 100%;
+    background-color: var(--blue);
+}
+
+.nav-container {
+    margin: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.nav-list {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 200vh;
+    background-color: var(--black);
+    overflow: hidden;
+    padding-top: 130px;
+    transition: all 0.3s;
+}
+
+.nav-list.active {
+    width: 50%;
+}
+
+.nav-list-item {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.nav-list-item > a {
+    display: block;
+    font-size: 1.9rem;
+    font-weight: 900;
+    color: var(--white);
+}
+
+.nav-list-item > a:hover {
+    color: var(--yellow);
+}
+.nav-list-item > a[data-content="about"]::after {
+    content: "ABOUT";
+}
+.nav-list-item > a[data-content="about"]:hover::after {
+    content: "關於我們";
+}
+.nav-list-item > a[data-content="service"]::after {
+    content: "SERVICE";
+}
+.nav-list-item > a[data-content="service"]:hover::after {
+    content: "服務與價格";
+}
+.nav-list-item > a[data-content="space"]::after {
+    content: "SPACE";
+}
+.nav-list-item > a[data-content="space"]:hover::after {
+    content: "野裸空間";
+}
+.nav-list-item > a[data-content="amenities"]::after {
+    content: "AMENITIES";
+}
+.nav-list-item > a[data-content="amenities"]:hover::after {
+    content: "設備介紹";
+}
+.nav-list-item > a[data-content="qa"]::after {
+    content: "Q&A";
+}
+.nav-list-item > a[data-content="qa"]:hover::after {
+    content: "常見問題";
+}
+.nav-list-item > a[data-content="store"]::after {
+    content: "STORE";
+}
+.nav-list-item > a[data-content="store"]:hover::after {
+    content: "野裸據點";
+}
+.nav-list-item > a[data-content="blog"]::after {
+    content: "BLOG";
+}
+.nav-list-item > a[data-content="blog"]:hover::after {
+    content: "部落格";
+}
+
+.nav-menu {
+    z-index: 3;
+    align-self: center;
+    background-image: url("../images/yellow-mobile/01-bt01.png");
+    width: 69px;
+    height: 69px;
+    transition: all 0.3s;
+}
+
+.nav-menu.active {
+    transform: rotate(90deg);
+}
+
+.yellow-waxing {
+    height: 100vh;
+    background: url("../images/yellow-mobile/01-bg.png") no-repeat;
+}
+
+.yellow-waxing-container {
+    height: 100%;
+    position: relative;
+}
+
+.yellow-waxing-ph {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.yellow-waxing-word {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 15px;
+}
+
+.yellow-waxing-btn {
+    z-index: 2;
+    position: absolute;
+    bottom: 35%;
+    right: 50%;
+}
+.about {
+    background: url("../images/yellow-mobile/02-bg.png");
+}
+.space {
+    background: url("../images/yellow-mobile/03-bg.png");
+}
+.service {
+    background: url("../images/yellow-mobile/04-bg.png");
+}
+.amenities {
+    background: url("../images/yellow-mobile/05-bg.png");
+}
+.qa {
+    background: url("../images/yellow-mobile/06-bg.png");
+}
+.stores {
+    background: url("../images/yellow-mobile/07-bg.png");
+}
