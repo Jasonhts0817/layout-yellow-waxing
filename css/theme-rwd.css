@@ -26,31 +26,94 @@
     }
 
     .yellow-waxing {
+        height: 100vh;
         position: relative;
         overflow: hidden;
         background: url("../images/yellow-web/01-bg.png");
     }
 
     .yellow-waxing-container {
+        display: flex;
+        justify-content: center;
         width: 772px;
         margin: 0 auto;
     }
 
+    .yellow-waxing-ph {
+        height: 90vh;
+    }
+
     .yellow-waxing-word {
-        position: absolute;
-        max-width: initial;
-        max-height: initial;
-        top: 135px;
-        left: -430px;
+        bottom: 5%;
+        right: 9%;
+        width: 80vw;
+        top: initial;
+        left: initial;
     }
 
     .yellow-waxing-btn {
-        top: 358px;
-        left: 15px;
+        top: initial;
+        left: initial;
+        bottom: 45%;
+        right: 58%;
     }
 
     .about {
         background: url("../images/yellow-web/02-bg.png");
+        background-size: cover;
+    }
+
+    .about-container {
+        position: relative;
+        margin: 0px 100px;
+    }
+
+    .about-title {
+        width: 50%;
+        position: absolute;
+        right: 0;
+    }
+    .about-desc {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 2.5rem;
+        width: 570px;
+        margin: 0 0 0 auto;
+    }
+
+    .about-list {
+        padding-top: 100px;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .about-item {
+        display: flex;
+        align-items: flex-end;
+    }
+    .about-item[data-index="2"] {
+        transform: translate(-39%);
+        align-self: center;
+    }
+    .about-item[data-index="3"] {
+        transform: translate(-5%);
+        align-self: center;
+    }
+    .about-item[data-index="4"] {
+        transform: translate(5%);
+        align-self: center;
+    }
+
+    .about-subtitle {
+        text-align: end;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    .about-content {
+        font-size: 1.8rem;
+        font-weight: 700;
     }
     .space {
         background: url("../images/yellow-web/03-bg.png");
