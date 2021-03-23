@@ -128,9 +128,9 @@
     .service-subtitle {
         text-align: start;
         margin: 30px 100px;
-        font-size: 40px;
+        font-size: 2.6rem;
         font-weight: 700;
-        color: var(--white);
+        color: var(--black);
     }
     .service-container {
         display: flex;
@@ -182,7 +182,39 @@
         background-size: cover;
     }
     .space {
+        min-height: 100vh;
+        background-size: cover;
+        padding: 0;
         background: url("../images/yellow-web/04-bg.png");
+    }
+    .space-title {
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .space-subtitle {
+        margin: 0 20px;
+        display: inline-block;
+        font-size: 2.6rem;
+        letter-spacing: 5px;
+        color: var(--blue);
+    }
+    .space-list {
+        height: 100vh;
+        text-align: center;
+    }
+    .space-list > li > img {
+        max-width: 60%;
+    }
+    .space-removal {
+        transform: translate(0, 0);
+    }
+    .space-shower {
+        transform: translate(20%, 0);
+    }
+    .space-locker {
+        transform: translate(-20%, 0);
     }
     .amenities {
         background: url("../images/yellow-web/05-bg.png");

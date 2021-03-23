@@ -238,6 +238,7 @@ body.active {
     text-align: center;
     font-size: 1.7rem;
     font-weight: 700;
+    margin: 10px 0;
     color: var(--yellow);
 }
 .service-item {
@@ -263,7 +264,24 @@ body.active {
 }
 
 .space {
+    min-height: 150vh;
+    padding: 30px 15px;
+    background-size: cover;
     background: url("../images/yellow-mobile/04-bg.png");
+}
+
+.space-subtitle {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin: 20px 0;
+    color: var(--blue);
+}
+
+.space-list {
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .amenities {
     background: url("../images/yellow-mobile/05-bg.png");
