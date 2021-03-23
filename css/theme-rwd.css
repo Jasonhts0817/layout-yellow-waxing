@@ -217,7 +217,31 @@
         transform: translate(-20%, 0);
     }
     .amenities {
+        min-height: 100vh;
+        background-size: cover;
+        padding: 0;
         background: url("../images/yellow-web/05-bg.png");
+    }
+    .amenities-title {
+        padding: 20px 0;
+        text-align: center;
+    }
+    .amenities-title-img {
+        transform: translate(10%);
+    }
+    .amenities-subtitle {
+        display: inline-block;
+        transform: translate(-10%);
+        font-size: 2.6rem;
+        letter-spacing: 5px;
+    }
+    .amenities-list {
+        min-height: 70vh;
+        text-align: center;
+    }
+    .amenities-list >li > img{
+        max-width: 80%;
+        margin: 0 35px;
     }
     .qa {
         background: url("../images/yellow-web/06-bg.png");
