@@ -239,12 +239,39 @@
         min-height: 70vh;
         text-align: center;
     }
-    .amenities-list >li > img{
+    .amenities-list > li > img {
         max-width: 80%;
         margin: 0 35px;
     }
     .qa {
+        height: 100vh;
+        background-size: cover;
         background: url("../images/yellow-web/06-bg.png");
+    }
+    .qa-container {
+        display: flex;
+        padding: 20px;
+    }
+    .qa-list {
+        height: 90vh;
+        padding: 0 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .qa-title > img {
+        width: 40vw;
+    }
+    .qa-ques-title {
+        font-size: 1.8rem;
+        padding: 0 0 0 30px;
+    }
+
+    .qa-title-side {
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     .stores {
         background: url("../images/yellow-web/07-bg.png");
