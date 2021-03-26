@@ -25,6 +25,10 @@
         vertical-align: middle;
     }
 
+    .nav-list-item > a:hover {
+        color: var(--white);
+    }
+
     .yellow-waxing {
         height: 100vh;
         position: relative;
@@ -274,6 +278,44 @@
         justify-content: space-between;
     }
     .stores {
+        text-align: center;
+        min-height: 100vh;
+        background-size: cover;
         background: url("../images/yellow-web/07-bg.png");
+    }
+
+    .stores-title {
+        margin: 20px 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .stores-subtitle {
+        letter-spacing: 5px;
+        font-size: 2.6rem;
+        transform: translate(-20%);
+    }
+
+    .store-region {
+        font-size: 2.6rem;
+        margin: 20px;
+    }
+
+    .store-list {
+        height: 70vh;
+        width: 50%;
+        margin: 0 auto;
+        align-content: center;
+    }
+
+    .store-item {
+        margin: 10px 20px;
+    }
+
+    .store-name {
+        width: 100%;
+        margin: auto;
+        position: relative;
     }
 }

@@ -181,7 +181,7 @@ body.active {
 
 .about {
     min-height: 100vh;
-    padding: 0 15px;
+    padding: 15px;
     background-size: cover;
     background: url("../images/yellow-mobile/02-bg.png");
 }
@@ -194,7 +194,7 @@ body.active {
 }
 
 .about-item {
-    padding: 5px 0;
+    padding: 15px 0;
 }
 
 .about-desc {
@@ -345,5 +345,65 @@ body.active {
     padding: 50px;
 }
 .stores {
+    min-height: 100vh;
+    padding: 30px 15px;
+    background-size: cover;
     background: url("../images/yellow-mobile/07-bg.png");
+}
+.stores-title {
+    display: flex;
+    flex-direction: column;
+}
+.stores-title > img {
+    max-width: 100%;
+}
+.stores-subtitle {
+    line-height: 40px;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin: 20px;
+    color: var(--white);
+}
+
+.store-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.store-region {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin: 10px;
+    color: var(--white);
+}
+
+.store-name {
+    width: 65%;
+    margin: auto;
+    position: relative;
+}
+.store-name > img {
+    width: 100%;
+}
+.store-name:hover .store-hover {
+    opacity: 1;
+}
+.store-hover {
+    opacity: 0;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.fixed-btn {
+    position: fixed;
+    right: 10px;
+    bottom: 30px;
+}
+
+.fixed-btn > div {
+    margin: 10px 0;
 }
