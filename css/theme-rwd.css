@@ -85,6 +85,7 @@
 
     .yellow-waxing-word img {
         height: 70vh;
+        max-width: initial;
     }
 
     .yellow-waxing-btn {
@@ -105,7 +106,7 @@
 
     .about-container {
         position: relative;
-        margin: 0px 100px;
+        margin: 0 5vw;
     }
 
     .about-title {
@@ -114,45 +115,55 @@
         right: 0;
     }
     .about-desc {
-        font-size: 20px;
+        font-size: 1vw;
         font-weight: 500;
-        line-height: 2.5rem;
-        width: 570px;
+        line-height: 4vh;
+        width: 30vw;
         margin: 0 0 0 auto;
     }
 
     .about-list {
-        padding-top: 100px;
+        padding-top: 11vh;
         height: 90vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
     }
     .about-item {
         display: flex;
-        align-items: flex-end;
     }
     .about-item[data-index="2"] {
-        transform: translate(-39%);
-        align-self: center;
+        margin-left: 5vw;
     }
     .about-item[data-index="3"] {
-        transform: translate(-5%);
-        align-self: center;
+        margin-left: 10vw;
     }
     .about-item[data-index="4"] {
-        transform: translate(5%);
-        align-self: center;
+        margin-left: 15vw;
+    }
+
+    .about-item[data-index="1"] img {
+        height: initial;
+        width: 8vw;
+    }
+    .about-item[data-index="2"] img {
+        height: initial;
+        width: 9vw;
+    }
+    .about-item[data-index="3"] img {
+        height: initial;
+        width: 18vw;
+    }
+    .about-item[data-index="4"] img {
+        height: initial;
+        width: 21vw;
     }
 
     .about-subtitle {
         text-align: end;
-        font-size: 3rem;
+        font-size: 2.5vw;
         font-weight: 700;
     }
 
     .about-content {
-        font-size: 1.8rem;
+        font-size: 1.5vw;
         font-weight: 700;
     }
     .service {
@@ -196,10 +207,12 @@
     }
     .service-item-img {
         transform: scale(0.5);
+        -webkit-transform: scale(0.5);
     }
     .service-item-icon {
         max-width: 100%;
         transform: scale(1.2);
+        -webkit-transform: scale(1.2);
     }
     .service-item-detial {
         margin: 0 30px;
@@ -249,12 +262,15 @@
     }
     .space-removal {
         transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
     }
     .space-shower {
         transform: translate(20%, 0);
+        -webkit-transform: translate(20%, 0);
     }
     .space-locker {
         transform: translate(-20%, 0);
+        -webkit-transform: translate(-20%, 0);
     }
     .amenities {
         min-height: 100vh;
@@ -268,10 +284,12 @@
     }
     .amenities-title-img {
         transform: translate(10%);
+        -webkit-transform: translate(10%);
     }
     .amenities-subtitle {
         display: inline-block;
         transform: translate(-10%);
+        -webkit-transform: translate(-10%);
         font-size: 2.6rem;
         letter-spacing: 5px;
     }
@@ -303,7 +321,7 @@
         width: 40vw;
     }
     .qa-ques-title {
-        font-size: 1.8rem;
+        font-size: 1.5vw;
         padding: 0 0 0 30px;
     }
 
@@ -331,6 +349,7 @@
         letter-spacing: 5px;
         font-size: 2.6rem;
         transform: translate(-20%);
+        -webkit-transform: translate(-20%);
     }
 
     .store-region {

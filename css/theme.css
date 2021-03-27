@@ -163,6 +163,7 @@ body.active {
 
 .aside-menu.active {
     transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
 }
 
 .yellow-waxing {
@@ -224,19 +225,26 @@ body.active {
     min-height: 100vh;
     padding: 15px;
     background-size: cover;
-    background-position: center;
     background: url("../images/yellow-mobile/02-bg.png");
+}
+
+.about-container > .rwd-mobile {
+    max-width: 540px;
+    margin: 0 auto;
 }
 
 .about-titleimg {
     padding: 10px 0;
 }
 .about-list {
-    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 1vw;
 }
 
 .about-item {
-    padding: 15px 0;
+    padding: 2vh 0;
 }
 
 .about-desc {
@@ -252,7 +260,7 @@ body.active {
     display: inline-block;
 }
 .about-subimg > img {
-    height: 10vh;
+    height: 11vh;
 }
 
 .about-subtitle {
@@ -264,11 +272,13 @@ body.active {
 
 .about-content {
     padding: 5px 0;
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.5rem;
     letter-spacing: 0.1rem;
     color: var(--blue);
 }
+
 .service {
     min-height: 150vh;
     padding: 30px 15px;
@@ -293,6 +303,7 @@ body.active {
 }
 .service-item-img {
     transform: scale(0.8);
+    -webkit-transform: scale(0.8);
 }
 
 .service-item:not(:nth-child(1)) {
@@ -344,6 +355,7 @@ body.active {
 }
 .amenities-img {
     transform: scale(0.7) translate(-10%);
+    -webkit-transform: scale(0.7) translate(-10%);
 }
 .qa {
     min-height: 100vh;
@@ -366,6 +378,7 @@ body.active {
 .qa-ques-title::before {
     content: "Q";
     transform: translate(-30px, -12px);
+    -webkit-transform: translate(-30px, -12px);
     position: absolute;
 }
 .qa-ques-title {
