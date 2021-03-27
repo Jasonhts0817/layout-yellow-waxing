@@ -1,31 +1,43 @@
 /*嚮應式語法寫在這*/
 /* 網頁版 */
-@media (min-width: 593px) {
+@media (min-width: 800px) {
+    .rwd-mobile {
+        display: none;
+    }
+    .rwd-pc {
+        display: block;
+    }
     .icon {
         margin: 10px;
-        width: 40px;
-        height: 40px;
+        width: 2.8vw;
+        height: 2.8vw;
     }
     .logo {
         margin: 15px 0;
+        max-width: 10%;
     }
-
-    .nav-list-web {
+    .nav-container {
+        margin: 0 5vw;
+    }
+    .nav-list {
         display: flex;
     }
 
-    .nav-list-item {
+    .nav-item {
         display: table;
         height: 100%;
-        margin: 0 20px;
+        margin: 0 1vw;
     }
 
-    .nav-list-item > a {
+    .nav-item > a {
+        font-size: 1.6vw;
+        font-weight: 900;
+        color: var(--white);
         display: table-cell;
         vertical-align: middle;
     }
 
-    .nav-list-item > a:hover {
+    .nav-item > a:hover {
         color: var(--white);
     }
 
@@ -37,29 +49,53 @@
     }
 
     .yellow-waxing-container {
-        display: flex;
-        justify-content: center;
-        width: 772px;
-        margin: 0 auto;
+        position: relative;
+    }
+
+    .yellow-waxing-ph-container {
+        width: 100vw;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .yellow-waxing-ph-box {
+        display: inline-block;
+        position: relative;
     }
 
     .yellow-waxing-ph {
-        height: 90vh;
+        height: 95vh;
+    }
+    .yellow-waxing-word-box {
+        width: 100vw;
+        height: 95vh;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 
     .yellow-waxing-word {
-        bottom: 5%;
-        right: 9%;
-        width: 80vw;
-        top: initial;
-        left: initial;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .yellow-waxing-word img {
+        height: 70vh;
     }
 
     .yellow-waxing-btn {
         top: initial;
-        left: initial;
-        bottom: 45%;
-        right: 58%;
+        right: initial;
+        left: 1%;
+        bottom: 51%;
+    }
+
+    .yellow-waxing-btn img {
+        max-height: 11vh;
     }
 
     .about {
@@ -317,5 +353,10 @@
         width: 100%;
         margin: auto;
         position: relative;
+    }
+
+    .fixed-btn {
+        max-width: 7vw;
+        margin: 10px 0;
     }
 }
