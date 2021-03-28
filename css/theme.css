@@ -3,6 +3,7 @@
     --blue: #1da5d4;
     --white: #ffffff;
     --yellow: #fbd743;
+    --gray: #4d4d4d;
 }
 
 .rwd-mobile {
@@ -437,8 +438,12 @@ body.active {
 .stores {
     min-height: 100vh;
     padding: 3vh 15px;
-    background-size: cover;
-    background: url("../images/yellow-mobile/07-bg.png");
+    background-color: var(--gray);
+}
+
+.stores-container {
+    max-width: 540px;
+    margin: 0 auto;
 }
 
 .stores-title {
@@ -446,15 +451,15 @@ body.active {
     flex-direction: column;
 }
 
-.stores-title > img {
+.stores-title img {
     max-width: 100%;
 }
 
 .stores-subtitle {
     line-height: 40px;
-    font-size: 1.7vw;
+    font-size: 3vh;
     font-weight: 700;
-    margin: 20px;
+    margin: 2vh 2vw;
     color: var(--white);
 }
 
@@ -462,11 +467,12 @@ body.active {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    min-height: 60vh;
 }
 
 .store-region {
     text-align: center;
-    font-size: 1.7vw;
+    font-size: 3vh;
     font-weight: 700;
     margin: 10px;
     color: var(--white);

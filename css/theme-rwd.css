@@ -427,8 +427,12 @@
     .stores {
         text-align: center;
         min-height: 100vh;
-        background-size: cover;
-        background: url("../images/yellow-web/07-bg.png");
+        background-color: var(--gray);
+    }
+
+    .stores-container {
+        max-width: 100%;
+        margin: 0 auto;
     }
 
     .stores-title {
@@ -438,27 +442,32 @@
         justify-content: center;
     }
 
+    .stores-title img {
+        max-width: 50vw;
+    }
+
     .stores-subtitle {
-        letter-spacing: 5px;
-        font-size: 2.6vw;
+        letter-spacing: 0.2vw;
+        font-size: 2vw;
         transform: translate(-20%);
         -webkit-transform: translate(-20%);
     }
 
     .store-region {
-        font-size: 2.6vw;
-        margin: 20px;
+        font-size: 2vw;
+        margin: 2vh 2vw;
     }
 
     .store-list {
-        height: 70vh;
+        height: 60vh;
         width: 50%;
         margin: 0 auto;
         align-content: center;
     }
 
     .store-item {
-        margin: 1vh 20px;
+        margin: 1vh 1vw;
+        width: 9vw;
     }
 
     .store-name {
