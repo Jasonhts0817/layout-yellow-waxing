@@ -327,8 +327,13 @@ body.active {
     background: url("../images/yellow-mobile/04-bg.png");
 }
 
+.space > .rwd-mobile {
+    max-width: 540px;
+    margin: 0 auto;
+}
+
 .space-subtitle {
-    font-size: 1.7vw;
+    font-size: 6vw;
     font-weight: 700;
     margin: 20px 0;
     color: var(--blue);
@@ -348,10 +353,16 @@ body.active {
     background: url("../images/yellow-mobile/05-bg.png");
 }
 
+.amenities > .rwd-mobile {
+    max-width: 540px;
+    margin: 0 auto;
+}
+
 .amenities-subtitle {
-    font-size: 1.7vw;
+    font-size: 1.7rem;
+    line-height: 5vh;
     font-weight: 700;
-    margin: 20px;
+    margin: 2vh 4vw;
     color: var(--yellow);
 }
 
@@ -360,9 +371,13 @@ body.active {
     overflow: hidden;
 }
 
+.amenities-img-box {
+    height: 15vh;
+    width: 80%;
+    margin: 0 auto;
+}
 .amenities-img {
-    transform: scale(0.7) translate(-10%);
-    -webkit-transform: scale(0.7) translate(-10%);
+    height: 100%;
 }
 
 .qa {
