@@ -4,21 +4,26 @@
     .rwd-mobile {
         display: none;
     }
+
     .rwd-pc {
         display: block;
     }
+
     .icon {
         margin: 10px;
         width: 2.8vw;
         height: 2.8vw;
     }
+
     .logo {
         margin: 15px 0;
         max-width: 10%;
     }
+
     .nav-container {
         margin: 0 5vw;
     }
+
     .nav-list {
         display: flex;
     }
@@ -67,6 +72,7 @@
     .yellow-waxing-ph {
         height: 95vh;
     }
+
     .yellow-waxing-word-box {
         width: 100vw;
         height: 95vh;
@@ -126,15 +132,19 @@
         padding-top: 11vh;
         height: 90vh;
     }
+
     .about-item {
         display: flex;
     }
+
     .about-item[data-index="2"] {
         margin-left: 5vw;
     }
+
     .about-item[data-index="3"] {
         margin-left: 10vw;
     }
+
     .about-item[data-index="4"] {
         margin-left: 15vw;
     }
@@ -143,14 +153,17 @@
         height: initial;
         width: 8vw;
     }
+
     .about-item[data-index="2"] img {
         height: initial;
         width: 9vw;
     }
+
     .about-item[data-index="3"] img {
         height: initial;
         width: 18vw;
     }
+
     .about-item[data-index="4"] img {
         height: initial;
         width: 21vw;
@@ -228,15 +241,18 @@
         margin: 3vh 0;
         height: 15%;
     }
+
     .service-item-img {
         transform: scale(0.5);
         -webkit-transform: scale(0.5);
     }
+
     .service-item-icon {
         max-width: 100%;
         transform: scale(1.2);
         -webkit-transform: scale(1.2);
     }
+
     .service-item-detial {
         width: initial;
         margin: 0 1.5vw;
@@ -246,94 +262,122 @@
         background: url("../images/yellow-web/03-item-bg01.png") no-repeat;
         background-size: cover;
     }
+
     .service-item-bg2 {
         background: url("../images/yellow-web/03-item-bg02.png") no-repeat;
         background-size: cover;
     }
+
     .service-item-bg3 {
         background: url("../images/yellow-web/03-item-bg03.png") no-repeat;
         background-size: cover;
     }
+
     .service-item-bg4 {
         background: url("../images/yellow-web/03-item-bg04.png") no-repeat;
         background-size: cover;
     }
+
     .space {
         min-height: 100vh;
         background-size: cover;
         padding: 0;
         background: url("../images/yellow-web/04-bg.png");
     }
+
+    .space > .rwd-mobile {
+        max-width: 540px;
+        margin: 0 auto;
+    }
+
     .space-title {
-        padding: 20px 0;
+        padding: 2vh 0;
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
     .space-subtitle {
-        margin: 0 20px;
+        margin: 0 2vw;
         display: inline-block;
-        font-size: 2.6rem;
+        font-size: 2.6vw;
         letter-spacing: 5px;
         color: var(--blue);
     }
+
     .space-list {
         height: 100vh;
         text-align: center;
     }
-    .space-list > li > img {
-        max-width: 60%;
+
+    .space-title-img {
+        max-width: 40vw;
     }
+
     .space-removal {
+        max-height: 20vh;
         transform: translate(0, 0);
         -webkit-transform: translate(0, 0);
     }
+
     .space-shower {
+        max-height: 15vh;
         transform: translate(20%, 0);
         -webkit-transform: translate(20%, 0);
     }
+
     .space-locker {
+        max-height: 15vh;
         transform: translate(-20%, 0);
         -webkit-transform: translate(-20%, 0);
     }
+
     .amenities {
         min-height: 100vh;
         background-size: cover;
         padding: 0;
         background: url("../images/yellow-web/05-bg.png");
     }
+
     .amenities-title {
-        padding: 20px 0;
+        padding: 2vh 0;
         text-align: center;
     }
+
     .amenities-title-img {
         transform: translate(10%);
         -webkit-transform: translate(10%);
     }
+
     .amenities-subtitle {
         display: inline-block;
         transform: translate(-10%);
         -webkit-transform: translate(-10%);
-        font-size: 2.6rem;
+        font-size: 2.6vw;
         letter-spacing: 5px;
     }
+
     .amenities-list {
         min-height: 70vh;
         text-align: center;
     }
+
     .amenities-list > li > img {
         max-width: 80%;
         margin: 0 35px;
     }
+
     .qa {
         height: 100vh;
         background-size: cover;
         background: url("../images/yellow-web/06-bg.png");
     }
+
     .qa-container {
         display: flex;
         padding: 20px;
     }
+
     .qa-list {
         height: 90vh;
         padding: 0 1.5vw;
@@ -341,9 +385,11 @@
         flex-direction: column;
         justify-content: space-around;
     }
+
     .qa-title > img {
         width: 40vw;
     }
+
     .qa-ques-title {
         font-size: 1.5vw;
         padding: 0 0 0 1.5vw;
@@ -355,6 +401,7 @@
         flex-direction: column;
         justify-content: space-between;
     }
+
     .stores {
         text-align: center;
         min-height: 100vh;
@@ -363,7 +410,7 @@
     }
 
     .stores-title {
-        margin: 20px 0;
+        margin: 2vh 0;
         flex-direction: row;
         align-items: center;
         justify-content: center;
@@ -371,13 +418,13 @@
 
     .stores-subtitle {
         letter-spacing: 5px;
-        font-size: 2.6rem;
+        font-size: 2.6vw;
         transform: translate(-20%);
         -webkit-transform: translate(-20%);
     }
 
     .store-region {
-        font-size: 2.6rem;
+        font-size: 2.6vw;
         margin: 20px;
     }
 
@@ -389,7 +436,7 @@
     }
 
     .store-item {
-        margin: 10px 20px;
+        margin: 1vh 20px;
     }
 
     .store-name {
@@ -400,6 +447,6 @@
 
     .fixed-btn {
         max-width: 7vw;
-        margin: 10px 0;
+        margin: 1vh 0;
     }
 }
