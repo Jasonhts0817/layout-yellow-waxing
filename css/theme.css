@@ -58,7 +58,7 @@ body.active {
 }
 
 .logo {
-    margin: 30px 0;
+    margin: 3vh 0;
 }
 
 .logo > img {
@@ -95,7 +95,7 @@ body.active {
 }
 
 .aside-item {
-    margin: 30px 0;
+    margin: 3vh 0;
     text-align: center;
 }
 
@@ -281,9 +281,14 @@ body.active {
 
 .service {
     min-height: 150vh;
-    padding: 30px 15px;
+    padding: 3vh 15px;
     background-size: cover;
     background: url("../images/yellow-mobile/03-bg.png");
+}
+
+.service > .rwd-mobile {
+    max-width: 540px;
+    margin: 0 auto;
 }
 
 .service-subtitle {
@@ -299,7 +304,12 @@ body.active {
     font-size: 21px;
     font-weight: 500;
     color: var(--white);
-    padding: 30px 0;
+    padding: 3vh 0;
+}
+.service-item-img-box {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
 }
 .service-item-img {
     transform: scale(0.8);
@@ -310,6 +320,7 @@ body.active {
     border-top: 1px solid var(--yellow);
 }
 .service-item-detial {
+    width: 50%;
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -318,7 +329,7 @@ body.active {
 
 .space {
     min-height: 150vh;
-    padding: 30px 15px;
+    padding: 3vh 15px;
     background-size: cover;
     background: url("../images/yellow-mobile/04-bg.png");
 }
@@ -338,7 +349,7 @@ body.active {
 }
 .amenities {
     min-height: 100vh;
-    padding: 30px 15px;
+    padding: 3vh 15px;
     background-size: cover;
     background: url("../images/yellow-mobile/05-bg.png");
 }
@@ -359,7 +370,7 @@ body.active {
 }
 .qa {
     min-height: 100vh;
-    padding: 30px 15px;
+    padding: 3vh 15px;
     background-size: cover;
     background: url("../images/yellow-mobile/06-bg.png");
 }
@@ -401,7 +412,7 @@ body.active {
 }
 .stores {
     min-height: 100vh;
-    padding: 30px 15px;
+    padding: 3vh 15px;
     background-size: cover;
     background: url("../images/yellow-mobile/07-bg.png");
 }
