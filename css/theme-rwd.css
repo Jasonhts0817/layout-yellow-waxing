@@ -286,7 +286,7 @@
     }
 
     .space-title {
-        padding: 2vh 0;
+        padding: 5vh 0;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -300,31 +300,35 @@
         color: var(--blue);
     }
 
-    .space-list {
-        height: 100vh;
-        text-align: center;
-    }
-
     .space-title-img {
         max-width: 40vw;
     }
 
+    .space-list {
+        height: 70vh;
+        max-width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .space-list img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
     .space-removal {
-        max-height: 20vh;
-        transform: translate(0, 0);
-        -webkit-transform: translate(0, 0);
+        height: 20vh;
+        text-align: center;
     }
 
     .space-shower {
-        max-height: 15vh;
-        transform: translate(20%, 0);
-        -webkit-transform: translate(20%, 0);
+        height: 15vh;
+        text-align: end;
     }
 
     .space-locker {
-        max-height: 15vh;
-        transform: translate(-20%, 0);
-        -webkit-transform: translate(-20%, 0);
+        height: 15vh;
     }
 
     .amenities {
