@@ -154,8 +154,7 @@ body.active {
 
 .yellow-waxing {
     min-height: 100vh;
-    background: url("../images/yellow-mobile/01-bg.png");
-    background-size: cover;
+    background-color: var(--yellow);
 }
 
 .yellow-waxing-container {
@@ -212,8 +211,7 @@ body.active {
 .about {
     min-height: 100vh;
     padding: 15px;
-    background-size: cover;
-    background: url("../images/yellow-mobile/02-bg.png");
+    background-color: var(--yellow);
 }
 
 .about-container > .rwd-mobile {
@@ -324,7 +322,7 @@ body.active {
     min-height: 150vh;
     padding: 3vh 15px;
     background-size: cover;
-    background: url("../images/yellow-mobile/04-bg.png");
+    background-color: var(--yellow);
 }
 
 .space > .rwd-mobile {
@@ -383,8 +381,12 @@ body.active {
 .qa {
     min-height: 100vh;
     padding: 3vh 15px;
-    background-size: cover;
-    background: url("../images/yellow-mobile/06-bg.png");
+    background-color: var(--yellow);
+}
+
+.qa > .rwd-mobile {
+    max-width: 540px;
+    margin: 0 auto;
 }
 
 .qa-title {
@@ -397,27 +399,27 @@ body.active {
 }
 
 .qa-item {
-    padding: 10px 0;
+    padding: 1.5vh 0;
 }
 
 .qa-ques-title::before {
     content: "Q";
-    transform: translate(-30px, -12px);
-    -webkit-transform: translate(-30px, -12px);
+    transform: translate(-6.5vw, -1.5vh);
+    -webkit-transform: translate(-6.5vw, -1.5vh);
     position: absolute;
 }
 
 .qa-ques-title {
-    font-size: 22px;
+    font-size: 3vh;
     font-weight: 700;
-    padding: 20px 0 10px 30px;
+    padding: 1vh 0 1vh 7vw;
     color: var(--white);
 }
 
 .qa-ques-content {
-    font-size: 1.3vw;
-    margin: 10px 20px 10px 30px;
-    line-height: 33px;
+    margin: 1vh 1vw 1vh 7vw;
+    font-size: 2.5vh;
+    line-height: 4vh;
     letter-spacing: 1px;
     color: var(--blue);
     border-bottom: 1px solid var(--blue);
@@ -425,7 +427,11 @@ body.active {
 
 .qa-btn {
     text-align: center;
-    padding: 50px;
+    max-width: 100%;
+}
+
+.qa-btn img {
+    max-width: 100%;
 }
 
 .stores {

@@ -335,7 +335,7 @@
     }
 
     .amenities-title {
-        padding: 2vh 0;
+        padding: 4vh 0;
         text-align: center;
     }
 
@@ -362,7 +362,7 @@
     }
 
     .amenities-list > li > img {
-        max-height: 35vh;
+        max-height: 32vh;
         max-width: 25vw;
         margin: 0 2vw;
     }
@@ -375,7 +375,7 @@
 
     .qa-container {
         display: flex;
-        padding: 20px;
+        padding: 1vh 2vw;
     }
 
     .qa-list {
@@ -383,7 +383,7 @@
         padding: 0 1.5vw;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
     }
 
     .qa-title > img {
@@ -395,11 +395,29 @@
         padding: 0 0 0 1.5vw;
     }
 
+    .qa-ques-title::before {
+        transform: translate(-2.5vw, -2vh);
+        -webkit-transform: translate(-2.5vw, -2vh);
+    }
+
+    .qa-ques-content {
+        margin: 1vh 1vw 1vh 1.5vw;
+        font-size: 1vw;
+        line-height: 3.5vh;
+        letter-spacing: 1px;
+    }
+
     .qa-title-side {
         height: 90vh;
+        max-width: 30vw;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+
+    .qa-btn {
+        max-width: 50%;
+        margin: 0 auto;
     }
 
     .stores {
