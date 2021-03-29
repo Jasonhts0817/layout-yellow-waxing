@@ -79,6 +79,9 @@ body.active {
     overflow: auto;
     padding-top: 130px;
     transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .aside-list.active {
@@ -86,18 +89,18 @@ body.active {
 }
 
 .aside-item {
-    margin: 3vh 0;
     text-align: center;
 }
 
 .aside-item > a {
     display: block;
-    font-size: 7vw;
+    font-size: 30px;
     font-weight: 900;
     color: var(--white);
 }
 
 .aside-item > a:hover {
+    font-weight: 500;
     color: var(--yellow);
 }
 .aside-item > a[data-content="about"]::after {
@@ -238,8 +241,8 @@ body.active {
 
 .about-desc {
     padding: 5px 10px;
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 20px;
+    line-height: 40px;
     font-weight: 500;
     color: var(--blue);
 }
@@ -262,9 +265,9 @@ body.active {
 
 .about-content {
     padding: 5px 0;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 700;
-    line-height: 25px;
+    line-height: 35px;
     letter-spacing: 0.1rem;
     color: var(--blue);
 }
@@ -282,10 +285,9 @@ body.active {
 }
 
 .service-subtitle {
-    text-align: center;
-    font-size: 24px;
+    font-size: 40px;
     font-weight: 700;
-    margin: 10px 0;
+    margin: 5vh 10px;
     color: var(--yellow);
 }
 
@@ -295,17 +297,20 @@ body.active {
     font-size: 21px;
     font-weight: 500;
     color: var(--white);
-    padding: 3vh 0;
+    padding: 2vh 0;
+    height: 35%;
 }
 
 .service-item-img-box {
+    height: 100%;
     width: 50%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
 }
+
 .service-item-img {
-    transform: scale(0.8);
-    -webkit-transform: scale(0.8);
+    height: 50%;
 }
 
 .service-item:not(:nth-child(1)) {
@@ -331,8 +336,14 @@ body.active {
     margin: 0 auto;
 }
 
+.space-title {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
 .space-subtitle {
-    font-size: 24px;
+    font-size: 40px;
+    line-height: 45px;
     font-weight: 700;
     margin: 20px 0;
     color: var(--blue);
@@ -345,7 +356,7 @@ body.active {
 }
 
 .space-list > li {
-    margin: 2vh 0;
+    margin: 5vh 0;
 }
 
 .amenities {
@@ -361,8 +372,8 @@ body.active {
 }
 
 .amenities-subtitle {
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 40px;
+    line-height: 50px;
     font-weight: 700;
     margin: 2vh 4vw;
     color: var(--yellow);
@@ -395,11 +406,12 @@ body.active {
 
 .qa-title {
     text-align: center;
-    padding: 30px 0;
+    margin: 30px auto;
+    max-width: 80%;
 }
 
 .qa-title > img {
-    max-width: 80%;
+    width: 100%;
 }
 
 .qa-item {
@@ -414,16 +426,17 @@ body.active {
 }
 
 .qa-ques-title {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 700;
     padding: 1vh 0 1vh 7vw;
     color: var(--white);
 }
 
 .qa-ques-content {
-    margin: 1vh 1vw 1vh 7vw;
+    padding: 1vh 7vw 3vh 7vw;
     font-size: 22px;
-    line-height: 28px;
+    font-weight: 500;
+    line-height: 38px;
     letter-spacing: 1px;
     color: var(--blue);
     border-bottom: 1px solid var(--blue);
