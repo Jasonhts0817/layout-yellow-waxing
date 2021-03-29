@@ -20,7 +20,12 @@
         max-width: 10%;
     }
 
+    .header {
+        max-height: 10vh;
+    }
+
     .nav-container {
+        max-height: 10vh;
         margin: 0 5vw;
     }
 
@@ -30,6 +35,7 @@
 
     .nav-item {
         display: table;
+        max-height: 10vh;
         height: 100%;
         margin: 0 1vw;
     }
@@ -280,9 +286,8 @@
 
     .space {
         min-height: 100vh;
-        background-size: cover;
         padding: 0;
-        background: url("../images/yellow-web/04-bg.png");
+        background-color: var(--yellow);
     }
 
     .space-title {
@@ -305,7 +310,7 @@
     }
 
     .space-list {
-        height: 70vh;
+        height: 60vh;
         max-width: 80%;
         margin: 0 auto;
         display: flex;
@@ -318,17 +323,17 @@
     }
 
     .space-removal {
-        height: 20vh;
+        height: 25vh;
         text-align: center;
     }
 
     .space-shower {
-        height: 15vh;
+        height: 20vh;
         text-align: end;
     }
 
     .space-locker {
-        height: 15vh;
+        height: 20vh;
     }
 
     .amenities {

@@ -561,6 +561,7 @@
     <script>
         $(document).ready(function () {
             $("#aside-menu").click(function () {
+                $("html").toggleClass('active');
                 $("body").toggleClass('active');
                 $("#aside-menu").toggleClass("active");
                 $("#aside-list").toggleClass("active");
@@ -571,6 +572,7 @@
                     !elem.className.includes('aside-menu') &&
                     !elem.className.includes('aside-list')) {
                     setTimeout(() => {
+                        $("html").toggleClass('active');
                         $("body").toggleClass('active');
                         $("#aside-menu").toggleClass("active");
                         $("#aside-list").toggleClass("active");
