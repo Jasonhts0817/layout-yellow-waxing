@@ -111,7 +111,7 @@
             <div class="rwd-mobile">
                 <div class="about-title">
                     <div class="about-titleimg">
-                        <img class="max-width-100 rwd-mobile" src="images/yellow-mobile/02-about.png">
+                        <img class="max-width-100" src="images/yellow-mobile/02-about.png">
                     </div>
                     <div class="about-desc">
                         物超所值的價格，專注於男性除毛服務，提供顧客本身做不
@@ -122,7 +122,7 @@
                 <ul class="about-list">
                     <li class="about-item">
                         <div class="about-subimg">
-                            <img class=" max-width-100 rwd-mobile" src="images/yellow-mobile/02-life.png">
+                            <img class="max-width-100" src="images/yellow-mobile/02-life.png">
                         </div>
                         <span class="about-subtitle">生活</span>
                         <div>
@@ -131,7 +131,7 @@
                     </li>
                     <li class="about-item">
                         <div class="about-subimg">
-                            <img class="max-width-100 rwd-mobile" src="images/yellow-mobile/02-easy.png">
+                            <img class="max-width-100" src="images/yellow-mobile/02-easy.png">
                         </div>
                         <span class="about-subtitle">簡單</span>
                         <div>
@@ -140,7 +140,7 @@
                     </li>
                     <li class="about-item">
                         <div class="about-subimg">
-                            <img class="max-width-100 rwd-mobile" src="images/yellow-mobile/02-efficiency.png">
+                            <img class="max-width-100" src="images/yellow-mobile/02-efficiency.png">
                         </div>
                         <span class="about-subtitle">效率</span>
                         <div>
@@ -149,7 +149,7 @@
                     </li>
                     <li class="about-item">
                         <div class="about-subimg">
-                            <img class="max-width-100 rwd-mobile" src="images/yellow-mobile/02-the-real-you.png">
+                            <img class="max-width-100" src="images/yellow-mobile/02-the-real-you.png">
                         </div>
                         <span class="about-subtitle">自我</span>
                         <div>
@@ -265,8 +265,12 @@
             <ul class="service-list">
                 <li class="service-subtitle">價格平實，輕鬆保養無壓力</li>
                 <li class="service-item service-item-bg1">
-                    <img class="service-item-icon" src="images/yellow-web/03-icon01.png">
-                    <img class="service-item-img" src="images/yellow-web/03-01.png">
+                    <div class="service-item-icon">
+                        <img src="images/yellow-web/03-icon01.png">
+                    </div>
+                    <div class="service-item-img">
+                        <img src="images/yellow-web/03-01.png">
+                    </div>
                     <div class="service-item-detial">
                         <div>屁屁 NT$600</div>
                         <div>雞雞 NT$1,200</div>
@@ -274,7 +278,9 @@
                     </div>
                 </li>
                 <li class="service-item service-item-bg2">
-                    <img class="service-item-img" src="images/yellow-web/03-02.png">
+                    <div class="service-item-img">
+                        <img src="images/yellow-web/03-02.png">
+                    </div>
                     <div class="service-item-detial">
                         <div>腋下 NT$500</div>
                         <div>半手 NT$800</div>
@@ -285,11 +291,17 @@
                         <div>腹部 NT$800</div>
                         <div>奶頭 NT$200</div>
                     </div>
-                    <img class="service-item-icon" src="images/yellow-web/03-icon02.png">
+                    <div class="service-item-icon">
+                        <img src="images/yellow-web/03-icon02.png">
+                    </div>
                 </li>
                 <li class="service-item  service-item-bg3">
-                    <img class="service-item-icon" src="images/yellow-web/03-icon03.png">
-                    <img class="service-item-img" src="images/yellow-web/03-03.png">
+                    <div class="service-item-icon">
+                        <img src="images/yellow-web/03-icon03.png">
+                    </div>
+                    <div class="service-item-img">
+                        <img src="images/yellow-web/03-03.png">
+                    </div>
                     <div class="service-item-detial">
                         <div>腳背 NT$200</div>
                         <div>腳趾 NT$200</div>
@@ -297,11 +309,15 @@
                     </div>
                 </li>
                 <li class="service-item service-item-bg4">
-                    <img class="service-item-img" src="images/yellow-web/03-04.png">
+                    <div class="service-item-img">
+                        <img src="images/yellow-web/03-04.png">
+                    </div>
                     <div class="service-item-detial">
                         <div>鼻毛 NT$200</div>
                     </div>
-                    <img class="service-item-icon" src="images/yellow-web/03-icon04.png">
+                    <div class="service-item-icon">
+                        <img src="images/yellow-web/03-icon04.png">
+                    </div>
                 </li>
             </ul>
             <div class="service-title-box">
@@ -390,6 +406,7 @@
             </ul>
         </div>
     </section>
+    <!-- qa -->
     <section class="qa">
         <div class="rwd-mobile">
             <div class="qa-title">
@@ -469,13 +486,16 @@
             </div>
         </div>
     </section>
+    <!-- stores -->
     <section class="stores">
         <div class="stores-container">
             <div class="stores-title">
-                <picture>
-                    <source srcset="images/yellow-web/07-stores.png" media="(min-width: 800px)">
-                    <img src="images/yellow-mobile/07-stores.png">
-                </picture>
+                <div class="stores-img-box">
+                    <picture>
+                        <source srcset="images/yellow-web/07-stores.png" class="stores-img" media="(min-width: 800px)">
+                        <img src="images/yellow-mobile/07-stores.png">
+                    </picture>
+                </div>
                 <div class="stores-subtitle">尋找離你最近的場域，<br class="rwd-mobile">加入LINE@即時預約</div>
             </div>
             <ul class="store-list">

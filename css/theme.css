@@ -310,7 +310,7 @@ body.active {
 }
 
 .service-item-img {
-    height: 50%;
+    height: 70%;
 }
 
 .service-item:not(:nth-child(1)) {
