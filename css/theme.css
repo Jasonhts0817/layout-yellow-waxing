@@ -28,23 +28,27 @@ body.active {
 
 .icon {
     margin: 10px auto;
-    width: 71px;
-    height: 71px;
+    width: 40px;
+    height: 40px;
 }
 
 .icon-fb {
+    background-size: 40px;
     background-image: url("../images/yellow-mobile/01-menu-fb-w.png");
 }
 
 .icon-fb:hover {
+    background-size: 40px;
     background-image: url("../images/yellow-mobile/01-menu-fb-y.png");
 }
 
 .icon-ig {
+    background-size: 40px;
     background-image: url("../images/yellow-mobile/01-menu-ig-w.png");
 }
 
 .icon-ig:hover {
+    background-size: 40px;
     background-image: url("../images/yellow-mobile/01-menu-ig-y.png");
 }
 
@@ -77,7 +81,7 @@ body.active {
     height: 100vh;
     background-color: var(--black);
     overflow: auto;
-    padding-top: 130px;
+    padding-top: 80px;
     transition: all 0.3s;
     display: flex;
     flex-direction: column;
@@ -94,7 +98,7 @@ body.active {
 
 .aside-item > a {
     display: block;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 900;
     color: var(--white);
 }
@@ -241,8 +245,8 @@ body.active {
 
 .about-desc {
     padding: 5px 10px;
-    font-size: 20px;
-    line-height: 40px;
+    font-size: 14px;
+    line-height: 28px;
     font-weight: 500;
     color: var(--blue);
 }
@@ -265,9 +269,9 @@ body.active {
 
 .about-content {
     padding: 5px 0;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 700;
-    line-height: 35px;
+    line-height: 30px;
     letter-spacing: 0.1rem;
     color: var(--blue);
 }
@@ -285,7 +289,7 @@ body.active {
 }
 
 .service-subtitle {
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 700;
     margin: 5vh 10px;
     color: var(--yellow);
@@ -342,8 +346,8 @@ body.active {
 }
 
 .space-subtitle {
-    font-size: 40px;
-    line-height: 45px;
+    font-size: 25px;
+    line-height: 30px;
     font-weight: 700;
     margin: 20px 0;
     color: var(--blue);
@@ -372,8 +376,8 @@ body.active {
 }
 
 .amenities-subtitle {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 25px;
+    line-height: 30px;
     font-weight: 700;
     margin: 2vh 4vw;
     color: var(--yellow);
@@ -426,7 +430,7 @@ body.active {
 }
 
 .qa-ques-title {
-    font-size: 30px;
+    font-size: 22px;
     font-weight: 700;
     padding: 1vh 0 1vh 7vw;
     color: var(--white);
@@ -434,9 +438,9 @@ body.active {
 
 .qa-ques-content {
     padding: 1vh 7vw 3vh 7vw;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
-    line-height: 38px;
+    line-height: 32px;
     letter-spacing: 1px;
     color: var(--blue);
     border-bottom: 1px solid var(--blue);
