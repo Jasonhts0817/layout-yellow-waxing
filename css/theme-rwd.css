@@ -276,8 +276,12 @@
         height: 130%;
     }
 
-    .service-item-detial {
+    .service-item-detail {
         width: initial;
+    }
+    
+    .service-item-detail > div{
+        margin: 1vh 0;
     }
 
     .service-item-bg1 {
@@ -425,7 +429,8 @@
     }
 
     .qa-ques-content {
-        padding: 1vh 1vw 1vh 1.5vw;
+        padding: 1vh 1vw 1vh 0;
+        margin: 0 0 0 1.5vw;
         font-size: 1.3vw;
         line-height: 3.5vh;
         letter-spacing: 1px;
