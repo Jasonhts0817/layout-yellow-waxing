@@ -25,7 +25,8 @@
     <link href="css/theme-rwd.css?t=20200405" rel="stylesheet" type="text/css">
     </link>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
     <script>
         var MYAPP = {
 
@@ -36,49 +37,50 @@
 </head>
 
 <body>
+    <header class="header" id="header">
+        <div class="nav-container">
+            <ul class="nav-list rwd-pc">
+                <li class="nav-item"><a href="#">關於野裸</a></li>
+                <li class="nav-item"><a href="#">服務介紹</a></li>
+                <li class="nav-item"><a href="#">空間介紹</a></li>
+                <li class="nav-item"><a href="#">設備介紹</a></li>
+                <li class="nav-item"><a href="#">常見問題</a></li>
+                <li class="nav-item"><a href="#">預約分店</a></li>
+                <li class="nav-item"><a href="#">除毛專欄</a></li>
+                <li class="nav-item">
+                    <a href="#">
+                        <img class="icon" src="images/yellow-web/01-ig-icon.png">
+                    </a>
+                    <a href="#">
+                        <img class="icon" src="images/yellow-web/01-fb-icon.png">
+                    </a>
+                </li>
+            </ul>
+            <div class="logo">
+                <img src="images/yellow-web/01-logo.png">
+            </div>
+            <div id="aside-menu" class="aside-menu rwd-mobile"></div>
+        </div>
+        <!-- 側邊選單 -->
+        <aside>
+            <ul id="aside-list" class="aside-list">
+                <li class="aside-item"><a href="#">關於野裸</a></li>
+                <li class="aside-item"><a href="#">服務介紹</a></li>
+                <li class="aside-item"><a href="#">空間介紹</a></li>
+                <li class="aside-item"><a href="#">設備介紹</a></li>
+                <li class="aside-item"><a href="#">常見問題</a></li>
+                <li class="aside-item"><a href="#">預約分店</a></li>
+                <li class="aside-item"><a href="#">除毛專欄</a></li>
+                <li class="aside-item">
+                    <a href="#" class="icon icon-ig"></a>
+                    <a href="#" class="icon icon-fb"></a>
+                </li>
+            </ul>
+        </aside>
+    </header>
     <!-- yellow-waxing -->
     <section class="yellow-waxing" id="yellow-waxing">
-        <header class="header">
-            <div class="nav-container">
-                <ul class="nav-list rwd-pc">
-                    <li class="nav-item"><a href="#">ABOUT</a></li>
-                    <li class="nav-item"><a href="#">SERVICE</a></li>
-                    <li class="nav-item"><a href="#">SPACE</a></li>
-                    <li class="nav-item"><a href="#">AMENITIES</a></li>
-                    <li class="nav-item"><a href="#">Q&A</a></li>
-                    <li class="nav-item"><a href="#">STORE</a></li>
-                    <li class="nav-item"><a href="#">BLOG</a></li>
-                    <li class="nav-item">
-                        <a href="#">
-                            <img class="icon" src="images/yellow-web/01-ig-icon.png">
-                        </a>
-                        <a href="#">
-                            <img class="icon" src="images/yellow-web/01-fb-icon.png">
-                        </a>
-                    </li>
-                </ul>
-                <div class="logo">
-                    <img src="images/yellow-web/01-logo.png">
-                </div>
-                <div id="aside-menu" class="aside-menu rwd-mobile"></div>
-            </div>
-            <!-- 側邊選單 -->
-            <aside>
-                <ul id="aside-list" class="aside-list">
-                    <li class="aside-item"><a href="#" data-content="about"></a></li>
-                    <li class="aside-item"><a href="#" data-content="service"></a></li>
-                    <li class="aside-item"><a href="#" data-content="space"></a></li>
-                    <li class="aside-item"><a href="#" data-content="amenities"></a></li>
-                    <li class="aside-item"><a href="#" data-content="qa"></a></li>
-                    <li class="aside-item"><a href="#" data-content="store"></a></li>
-                    <li class="aside-item"><a href="#" data-content="blog"></a></li>
-                    <li class="aside-item">
-                        <a href="#" class="icon icon-ig"></a>
-                        <a href="#" class="icon icon-fb"></a>
-                    </li>
-                </ul>
-            </aside>
-        </header>
+
         <div class="yellow-waxing-container">
             <div class="yellow-waxing-ph-container">
                 <div class="yellow-waxing-ph-box">
@@ -190,7 +192,7 @@
                         </div>
                         <div>
                             <div class="about-subtitle">效率</div>
-                            <div class="about-content">找到真實的你，放心的來解放自己，野裸就是要你好看</div>
+                            <div class="about-content">找到真實的你，放心的來解放自我，野裸就是要你好看</div>
                         </div>
                     </li>
                     <li class="about-item" data-index="4">
@@ -209,7 +211,7 @@
     <!-- service -->
     <section class="service">
         <div class="rwd-mobile">
-            <div>
+            <div class="service-title">
                 <img class="max-width-100" src="images/yellow-mobile/03-serivce.png">
                 <div class="service-subtitle">價格平實，輕鬆保養無壓力</div>
             </div>
@@ -353,11 +355,11 @@
     <!-- amenities -->
     <section class="amenities">
         <div class="rwd-mobile">
+            <div class="amenities-title">
+                <img class="max-width-100" src="images/yellow-mobile/05-amenities.png">
+                <div class="amenities-subtitle">來到這裡<br>我們都幫你準備好了！</div>
+            </div>
             <ul class="amenities-list">
-                <li>
-                    <img class="max-width-100" src="images/yellow-mobile/05-amenities.png">
-                    <div class="amenities-subtitle">來到這裡<br>我們都幫你準備好了！</div>
-                </li>
                 <li>
                     <div class="amenities-img-box">
                         <img class="amenities-img" src="images/yellow-mobile/05-icon01.png">
@@ -391,12 +393,12 @@
                 <span class="amenities-subtitle">來到這裡，我們都幫你準備好了！</span>
             </div>
             <ul class="amenities-list">
-                <li>
+                <li class="amenities-item1">
                     <img src="images/yellow-web/05-01.png">
                     <img src="images/yellow-web/05-02.png">
                     <img src="images/yellow-web/05-03.png">
                 </li>
-                <li>
+                <li class="amenities-item2">
                     <img src="images/yellow-web/05-04.png">
                     <img src="images/yellow-web/05-05.png">
                 </li>
@@ -577,26 +579,144 @@
     </footer>
     <script>
         $(document).ready(function () {
-            $("#aside-menu").click(function () {
-                $("html").toggleClass('active');
-                $("body").toggleClass('active');
-                $("#aside-menu").toggleClass("active");
-                $("#aside-list").toggleClass("active");
-            })
-            $("body").click(function (event) {
-                var elem = event.target;
-                if ($("body").hasClass('active') &&
-                    !elem.className.includes('aside-menu') &&
-                    !elem.className.includes('aside-list')) {
-                    setTimeout(() => {
-                        $("html").toggleClass('active');
-                        $("body").toggleClass('active');
-                        $("#aside-menu").toggleClass("active");
-                        $("#aside-list").toggleClass("active");
-                    }, 300);
+            menuClick();
+            fixHeader();
+            common();
+            blogSharing();
+            loadGoogleFont();
+            // goToTop();
+            jumpMenu();
+        });
+
+        function menuClick() {
+            $('#aside-menu').click(function () {
+                $('#aside-menu').toggleClass('active');
+                $('#aside-list').toggleClass('active');
+            });
+        }
+
+        function fixHeader() {
+            // 上一次的Y(判斷往上或往下);
+
+            var lastScrollTop = 0;
+            $(window).scroll(function () {
+                var st = $(this).scrollTop();
+                var header = $("#header");
+                var headerHeight = header[0].offsetHeight;
+                var topPos = +header.css('top').replace('px', '');
+                var marginalVal = lastScrollTop - st;
+                if (lastScrollTop > st) {
+                    //往上
+                    marginalVal = (topPos > 0) ? 0 : lastScrollTop - st;
+                } else {
+                    if ($("#aside-menu").hasClass('active')) { return; }
+                    //往下
+                    marginalVal = (headerHeight + topPos < 0) ? 0 : lastScrollTop - st;
                 }
-            })
-        })
+                topPos = (topPos + marginalVal > 0 || st <= 0) ? 0 : topPos + (marginalVal * 0.5);
+                header.attr('style', 'top:' + topPos + 'px');
+                lastScrollTop = st;
+            });
+        }
+
+        function jumpMenu() {
+
+            //選單跳段落
+            $('.nav-list li.nav-item a,.aside-list li.aside-item a').click(function () {
+
+                console.log('click menu link');
+
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                    jumpSection(this.hash, 0, 500);
+                    return false;
+                }
+            });
+
+            //處理編輯器要跳段落
+            $('.editor a').click(function () {
+                var $anchor = $(this);
+                console.log('click editor internal link');
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                    if ($anchor.attr('href').indexOf('http') < 0) {
+                        //不是完整連結才要跳
+                        jumpSection(this.hash, 0, 500);
+                        return false;
+                    }
+
+                }
+            });
+
+
+            /*才能避免slider產生後的高度讓跳cut不正確*/
+            var jumpHash = location.hash;
+            //超連結跳段落
+            if (jumpHash !== '') {
+                var newjumpHash = jumpHash.replace(/\//, '');
+                console.log('detect jump from link url:' + newjumpHash);
+                Pace.on('done', function () {
+                    jumpSection(newjumpHash, 0, 500);
+                    return false;
+                });
+            }
+
+
+        }
+
+        function blogSharing() {
+            initJsSocial($('#blogSharing'));
+        }
+
+        // function productSharing() {
+        //     initJsSocial($('#productSharing'));
+        // }
+
+        function initJsSocial($targetElem) {
+            Pace.on('done', function () {
+                if ($targetElem.length > 0) {
+                    $targetElem.jsSocials({
+                        shares: ["twitter", "facebook"]
+                    });
+                }
+            });
+
+        }
+
+        // function goToTop() {
+
+
+        //     //Click event to scroll to top
+        //     $('.scroll-top').click(function () {
+        //         $('html, body').animate({
+        //             scrollTop: 0
+        //         }, 800);
+        //         return false;
+        //     });
+        // }
+
+        function loadGoogleFont() {
+            WebFont.load({
+                timeout: 2000,
+                google: {
+                    families: ['Noto Sans TC', 'Open Sans']
+                },
+                custom: {
+                    // families: [
+                    //     'FontAwesome',
+                    // ]
+                },
+
+                fontloading: function (familyName, fvd) {
+                    console.log('fontloading:' + familyName);
+                },
+                fontactive: function (familyName, fvd) {
+                    console.log('fontactive:' + familyName);
+                },
+                fontinactive: function (familyName, fvd) {
+                    console.log('fontinactive:' + familyName);
+                }
+            });
+        }
     </script>
 </body>
 
