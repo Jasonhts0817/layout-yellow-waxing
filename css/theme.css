@@ -213,7 +213,6 @@ ul {
 }
 
 .about {
-    min-height: 100vh;
     background-color: var(--yellow);
 }
 
@@ -241,7 +240,7 @@ ul {
 }
 
 .about-desc {
-    padding: 5px 10px;
+    padding: 5px 3%;
     font-size: 12px;
     line-height: 28px;
     font-weight: 500;
@@ -275,7 +274,6 @@ ul {
 }
 
 .service {
-    min-height: 150vh;
     padding: 3vh 0;
     background-size: cover;
     background: url("../images/yellow-mobile/03-bg.png");
@@ -339,7 +337,6 @@ ul {
 }
 
 .space {
-    min-height: 100vh;
     padding: 50px 0;
     background-color: var(--yellow);
 }
@@ -374,7 +371,6 @@ ul {
 }
 
 .amenities {
-    min-height: 100vh;
     padding: 50px 0;
     background-size: cover;
     background: url("../images/yellow-mobile/05-bg.png");
@@ -393,7 +389,7 @@ ul {
     font-size: 25px;
     line-height: 30px;
     font-weight: 700;
-    margin: 27px 0 35px 4.7vw;
+    margin: 27px 0 35px 5%;
     color: var(--yellow);
 }
 
@@ -402,8 +398,8 @@ ul {
 }
 
 .amenities-img-box {
-    height: 114px;
-    margin: 15px 0 0 55px;
+    height: 14vh;
+    margin: 15px 0 0 15vw;
 }
 
 .amenities-img {
@@ -411,7 +407,6 @@ ul {
 }
 
 .qa {
-    min-height: 100vh;
     padding: 50px 0;
     background-color: var(--yellow);
 }
@@ -470,7 +465,6 @@ ul {
 }
 
 .stores {
-    min-height: 100vh;
     padding: 64px 0;
     background-color: var(--gray);
 }
@@ -494,7 +488,7 @@ ul {
     line-height: 40px;
     font-size: 24px;
     font-weight: 700;
-    margin: 23px 4.9vw 10px 4.9vw;
+    margin: 23px 4.9vw 10px 5%;
     color: var(--white);
 }
 
@@ -502,7 +496,6 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    min-height: 60vh;
     padding: 0 20px;
 }
 
