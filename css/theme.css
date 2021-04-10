@@ -309,7 +309,6 @@ ul {
 }
 
 .service-item-img-box {
-    height: 100%;
     width: 60%;
     display: flex;
     justify-content: center;
@@ -326,7 +325,6 @@ ul {
 
 .service-item-detail {
     width: 40%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
