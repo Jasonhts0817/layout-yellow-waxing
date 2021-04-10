@@ -43,13 +43,13 @@
     .nav-item > a {
         font-size: 1.6vw;
         font-weight: 700;
-        color: var(--white);
+        color: #ffffff;
         display: table-cell;
         vertical-align: middle;
     }
 
     .nav-item > a:hover {
-        color: var(--white);
+        color: #ffffff;
     }
 
     .yellow-waxing {
@@ -63,11 +63,14 @@
     .yellow-waxing-container {
         position: relative;
         min-height: initial;
+        max-width: initial;
+        margin: initial;
     }
 
     .yellow-waxing-ph-container {
         width: 100vw;
         text-align: center;
+        position: initial;
     }
 
     .yellow-waxing-ph-box {
@@ -85,6 +88,8 @@
         position: absolute;
         top: 0;
         left: 0;
+        z-index: initial;
+        padding: initial;
     }
 
     .yellow-waxing-word {
@@ -97,6 +102,8 @@
     .yellow-waxing-word img {
         height: 75%;
         max-width: initial;
+        z-index: initial;
+        width: initial;
     }
 
     .yellow-waxing-btn {
@@ -127,7 +134,7 @@
     .about-title {
         position: absolute;
         right: 0;
-        top: 33px;
+        top: 43px;
         padding: 0 6.6vw;
     }
 
@@ -230,7 +237,7 @@
         font-size: 2.2vw;
         font-weight: 700;
         letter-spacing: 3px;
-        color: var(--white);
+        color: #ffffff;
     }
 
     .service-container {
@@ -260,6 +267,7 @@
     }
 
     .service-item-img {
+        width:initial;
         height: 78%;
         display: flex;
         align-items: center;
@@ -283,6 +291,7 @@
     }
 
     .service-item-detail > div {
+        padding:initial;
         margin: 0.5vw 0;
     }
 
@@ -334,7 +343,7 @@
     .service-item-bg4 {
         background: url("../images/yellow-web/03-item-bg04.png") no-repeat;
         background-position: right;
-        height: 14%;
+        height: 7.8vw;
     }
 
     .service-item-bg4 .service-item-icon {
@@ -350,7 +359,7 @@
 
     .space {
         padding: 0;
-        background-color: var(--yellow);
+        background-color: #fbd743;
     }
 
     .space > .rwd-pc {
@@ -360,7 +369,8 @@
     .space-title {
         position: absolute;
         top: 6.9%;
-        left: 11.7vw;
+        left: 13.8vw;
+        padding: initial;
     }
 
     .space-subtitle {
@@ -369,7 +379,7 @@
         transform: translate(0, -4.7vw);
         font-size: 2.1vw;
         letter-spacing: 0.47vw;
-        color: var(--blue);
+        color: #1da5d4;
     }
 
     .space-title-img {
@@ -471,6 +481,7 @@
     .qa-title {
         margin: 0 auto;
         max-width: 88%;
+        padding: initial;
     }
 
     .qa-list {
@@ -511,11 +522,12 @@
     .qa-btn {
         max-width: 50%;
         margin: 0 auto 0 6.1vw;
+        padding: initial;
     }
 
     .stores {
         padding: 0;
-        background-color: var(--gray);
+        background-color: #4d4d4d;
     }
 
     .stores-container {
