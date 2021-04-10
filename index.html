@@ -569,10 +569,17 @@
         });
 
         function menuClick() {
-            $('#aside-menu').click(function () {
+            var menuBtn = $('#aside-menu');
+            var menuLinkList = $('#aside-list a')
+            if (menuBtn.length == 0 || menuLinkList.length == 0) { return; }
+            menuBtn.click(function () {
                 $('#aside-menu').toggleClass('active');
                 $('#aside-list').toggleClass('active');
             });
+            menuLinkList.click(function (event) {
+                $('#aside-menu').toggleClass('active');
+                $('#aside-list').toggleClass('active');
+            })
         }
 
         function fixHeader() {
