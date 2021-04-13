@@ -151,7 +151,8 @@ ul {
 
 .yellow-waxing {
     padding-top: 16vh;
-    background-color: #fbd743;
+    background-color: #fbd743;    
+    min-height: 100vh;
 }
 
 .yellow-waxing-container {
@@ -422,7 +423,7 @@ ul {
 
 .qa-title {
     text-align: center;
-    padding: 14% 17.7% 9% 20%;
+    padding: 14% 17.7% 13% 20%;
 }
 
 .qa-title > img {
@@ -430,7 +431,12 @@ ul {
 }
 
 .qa-item {
-    padding: 3.2% 0;
+    margin: 0 35px 23px 70px;
+    border-bottom: 1px solid #1da5d4;
+    cursor: pointer;
+}
+.qa-ques-title:hover{
+    color: #ffffff;
 }
 
 .qa-ques-title::before {
@@ -443,19 +449,25 @@ ul {
 .qa-ques-title {
     font-size: 18px;
     font-weight: 500;
-    padding: 0 0 0 70px;
     color: #ffffff;
 }
 
 .qa-ques-content {
-    padding: 15px 15px 23px 0;
-    margin: 0 35px 0 70px;
+    padding: 15px 15px 6.4% 0;
     font-size: 13px;
     font-weight: 500;
     line-height: 25px;
     letter-spacing: 1px;
     color: #1da5d4;
-    border-bottom: 1px solid #1da5d4;
+    opacity: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.5s;
+}
+
+.qa-item.active .qa-ques-content{
+    opacity: 1;
+    max-height: 50vh;
 }
 
 .qa-btn {

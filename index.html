@@ -560,6 +560,7 @@
     <script>
         $(document).ready(function () {
             menuClick();
+            qaCollapse();
             fixHeader();
             common();
             blogSharing();
@@ -569,17 +570,30 @@
         });
 
         function menuClick() {
-            var menuBtn = $('#aside-menu');
-            var menuLinkList = $('#aside-list a')
-            if (menuBtn.length == 0 || menuLinkList.length == 0) { return; }
-            menuBtn.click(function () {
-                $('#aside-menu').toggleClass('active');
-                $('#aside-list').toggleClass('active');
+            var $menuBtn = $('#aside-menu');
+            var $menuList = $('#aside-list');
+            var $menuLinkList = $('#aside-list a')
+            if ($menuBtn.length == 0 || $menuLinkList.length == 0) { return; }
+            $menuBtn.click(function () {
+                $menuBtn.toggleClass('active');
+                $menuList.toggleClass('active');
             });
-            menuLinkList.click(function (event) {
-                $('#aside-menu').toggleClass('active');
-                $('#aside-list').toggleClass('active');
+            $menuLinkList.click(function () {
+                $menuBtn.toggleClass('active');
+                $menuList.toggleClass('active');
             })
+        }
+
+        function qaCollapse() {
+            var $qaItems = $('.qa-item');
+            if ($qaItems.length == 0) { return; }
+            $qaItems.click(function () {
+                var $currentItem = $(this);
+                if (!$currentItem.hasClass('active')) {
+                    $qaItems.removeClass('active');
+                }
+                $currentItem.toggleClass('active');
+            });
         }
 
         function fixHeader() {
