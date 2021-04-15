@@ -150,7 +150,7 @@ ul {
 }
 
 .yellow-waxing {
-    padding-top: 16vh;
+    padding-top: 10vh;
     background-color: #fbd743;    
     min-height: 100vh;
 }
@@ -158,53 +158,58 @@ ul {
 .yellow-waxing-container {
     position: relative;
     max-width: 540px;
-    margin: 0 auto;
+    margin: 0 auto;   
+    height: 90vh;
 }
 
 .yellow-waxing-ph-container {
     width: 100%;
-    text-align: center;
-    position: absolute;
-    top: 0;
-}
-
-.yellow-waxing-ph-box {
-    display: inline-block;
+    height: 82vh;
+    overflow: hidden;
     position: relative;
 }
 
+.yellow-waxing-ph-box {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
 .yellow-waxing-ph {
-    max-width: 100%;
+    height: 100%;
 }
 
 .yellow-waxing-word-box {
-    z-index: 3;
     width: 100%;
-    text-align: center;
-    padding: 11% 7% 17% 3%;
+    position: absolute;
+    bottom: 3%;
+    padding: 0 4%;
+    height: 82vh;
 }
 
 .yellow-waxing-word {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
+    height: 100%;
 }
 
 .yellow-waxing-word img {
     z-index: 1;
-    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .yellow-waxing-btn {
     z-index: 2;
-    position: absolute;    
-    right: 53%;
-    top: 83%;
+    position: absolute;      
+    right: 55%;
+    bottom: 6%;
 }
 
 .yellow-waxing-btn img {
     display: inline-block !important;
-    max-height: 15.5vw;
+    max-height: 7vh;
 }
 
 .about {
@@ -216,7 +221,7 @@ ul {
     margin: 0 auto;
 }
 .about-title {
-    padding: 0 6.2%;
+    padding: 10% 6.2% 0 6.2%;
 }
 
 .about-list {
@@ -450,24 +455,16 @@ ul {
     font-size: 18px;
     font-weight: 500;
     color: #ffffff;
+    padding: 0 0 15px 0;
 }
 
 .qa-ques-content {
-    padding: 15px 15px 6.4% 0;
+    padding: 0 15px 6.4% 0;
     font-size: 13px;
     font-weight: 500;
     line-height: 25px;
     letter-spacing: 1px;
     color: #1da5d4;
-    opacity: 0;
-    overflow: hidden;
-    max-height: 0;
-    transition: all 0.5s;
-}
-
-.qa-item.active .qa-ques-content{
-    opacity: 1;
-    max-height: 50vh;
 }
 
 .qa-btn {

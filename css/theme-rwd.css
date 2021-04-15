@@ -62,7 +62,7 @@
 
     .yellow-waxing-container {
         position: relative;
-        min-height: initial;
+        height: initial;
         max-width: initial;
         margin: initial;
     }
@@ -71,15 +71,18 @@
         width: 100vw;
         text-align: center;
         position: initial;
+        height: initial;
     }
 
     .yellow-waxing-ph-box {
         display: inline-block;
-        position: relative;
+        position: relative;    
+        height: initial
     }
 
     .yellow-waxing-ph {
         width: 35.9vw;
+        height: initial;
     }
 
     .yellow-waxing-word-box {
