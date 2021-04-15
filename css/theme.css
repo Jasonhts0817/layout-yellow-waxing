@@ -169,6 +169,10 @@ ul {
 }
 
 .yellow-waxing-ph-box {
+    height: 100%;
+}
+
+.yellow-waxing-ph-box picture{
     display: flex;
     justify-content: center;
     height: 100%;

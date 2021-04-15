@@ -573,6 +573,8 @@
             var $menuBtn = $('#aside-menu');
             var $menuList = $('#aside-list');
             var $menuLinkList = $('#aside-list a')
+            var header = $("#header");
+            var headerHeight = header[0].offsetHeight;
             if ($menuBtn.length == 0 || $menuLinkList.length == 0) { return; }
             $menuBtn.click(function () {
                 $menuBtn.toggleClass('active');
@@ -581,6 +583,7 @@
             $menuLinkList.click(function () {
                 $menuBtn.toggleClass('active');
                 $menuList.toggleClass('active');
+                setTimeout(() => { header.attr('style', 'top: -' + headerHeight + 'px'); }, 50);
             })
         }
 

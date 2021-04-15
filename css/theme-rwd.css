@@ -80,6 +80,11 @@
         height: initial
     }
 
+    .yellow-waxing-ph-box picture{
+        display: initial;
+        justify-content: initial;
+    }
+
     .yellow-waxing-ph {
         width: 35.9vw;
         height: initial;
