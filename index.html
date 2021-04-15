@@ -586,13 +586,15 @@
 
         function qaCollapse() {
             var $qaItems = $('.qa-item');
+            var $qaContent = $('.qa-item > .qa-ques-content')
             if ($qaItems.length == 0) { return; }
+            $qaContent.hide();
             $qaItems.click(function () {
-                var $currentItem = $(this);
-                if (!$currentItem.hasClass('active')) {
-                    $qaItems.removeClass('active');
-                }
-                $currentItem.toggleClass('active');
+                var $content = $(this).children('.qa-ques-content');
+                var isActive = $content.attr('style').includes('display: block');
+                $qaContent.slideUp();
+                if (isActive) { return; }
+                $content.slideDown();
             });
         }
 

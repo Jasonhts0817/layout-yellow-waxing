@@ -498,7 +498,7 @@
 
     .qa-ques-title {
         font-size: 1.6vw;
-        padding: initial;
+        padding: 0 0 1.9% 0;
     }
 
     .qa-ques-title::before {
@@ -508,7 +508,6 @@
 
     .qa-ques-content {
         padding: initial;
-        margin: 1.9% 0 0 0;
         font-size: 1vw;
         line-height: 1.8vw;
     }
