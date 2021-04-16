@@ -583,7 +583,9 @@
             $menuLinkList.click(function () {
                 $menuBtn.toggleClass('active');
                 $menuList.toggleClass('active');
-                setTimeout(() => { header.attr('style', 'top: -' + headerHeight + 'px'); }, 50);
+                header.data('freeze', true);
+                header.attr('style', 'top: -' + headerHeight + 'px');
+                setTimeout(() => { header.data('freeze', false); }, 2000);
             })
         }
 
@@ -603,7 +605,6 @@
 
         function fixHeader() {
             // 上一次的Y(判斷往上或往下);
-
             var lastScrollTop = 0;
             $(window).scroll(function () {
                 var st = $(this).scrollTop();
@@ -611,6 +612,7 @@
                 var headerHeight = header[0].offsetHeight;
                 var topPos = +header.css('top').replace('px', '');
                 var marginalVal = lastScrollTop - st;
+                if (header.data('freeze') == true) { return; }
                 if (lastScrollTop > st) {
                     //往上
                     marginalVal = (topPos > 0) ? 0 : lastScrollTop - st;
