@@ -188,13 +188,16 @@ ul {
     bottom: 3%;
     padding: 0 4%;
     height: 82vh;
-}
-
-.yellow-waxing-word {
     display: flex;
     align-items: flex-end;
     justify-content: center;
+}
+
+.yellow-waxing-word {    
     height: 100%;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
 }
 
 .yellow-waxing-word img {
@@ -213,6 +216,16 @@ ul {
 .yellow-waxing-btn img {
     display: inline-block !important;
     max-height: 7vh;
+}
+
+.yellow-waxing-goto{
+    position: absolute;
+    right: 0%;
+    width: 32%;
+}
+
+.yellow-waxing-goto img{
+    width: 100%;
 }
 
 .about {

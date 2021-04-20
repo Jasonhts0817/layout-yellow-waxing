@@ -126,6 +126,19 @@
         max-height: initial;
     }
 
+    .yellow-waxing-goto{
+        position: absolute;
+        right: initial;
+        top: 90%;
+        left: 0%;
+        width: 16.5%;
+    }
+
+    .yellow-waxing-goto img{
+        height: initial;
+        width: 100%;
+    }
+
     .about {
         background: url("../images/yellow-web/02-bg.png");
         background-size: cover;
