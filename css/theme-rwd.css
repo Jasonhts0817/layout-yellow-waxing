@@ -77,7 +77,8 @@
     .yellow-waxing-ph-box {
         display: inline-block;
         position: relative;    
-        height: initial
+        width: 35.9vw;
+        height: 46vw;
     }
 
     .yellow-waxing-ph-box picture{
@@ -87,7 +88,7 @@
 
     .yellow-waxing-ph {
         width: 35.9vw;
-        height: initial;
+        height: 46vw;
     }
 
     .yellow-waxing-word-box {

@@ -24,6 +24,8 @@
     </link>
     <link href="css/theme-rwd.css?t=20200405" rel="stylesheet" type="text/css">
     </link>
+    <link href="css/animate-v4.css?t=20200405" rel="stylesheet" type="text/css">
+    </link>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap"
         rel="stylesheet">
@@ -34,6 +36,7 @@
     </script>
     <script type="text/javascript" src="js/jq-core.js"></script>
     <script type="text/javascript" src="js/theme.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
 </head>
 
 <body>
@@ -83,7 +86,7 @@
     <!-- yellow-waxing -->
     <section class="yellow-waxing" id="yellow-waxing">
         <div class="yellow-waxing-container">
-            <div class="yellow-waxing-ph-container">
+            <div class="yellow-waxing-ph-container wow animate__animated animate__fadeInDown" data-wow-duration="0.5s">
                 <div class="yellow-waxing-ph-box">
                     <picture>
                         <source srcset="images/yellow-web/01-ph.png" class="yellow-waxing-ph"
@@ -98,7 +101,8 @@
                     </a>
                 </div>
             </div>
-            <div class="yellow-waxing-word-box">
+            <div class="yellow-waxing-word-box wow animate__animated animate__zoomIn" data-wow-duration="0.5s"
+                data-wow-delay="1.0s">
                 <picture class="yellow-waxing-word">
                     <source srcset="images/yellow-web/01-yallow-waxing.png" media="(min-width: 800px)">
                     <img src="images/yellow-mobile/01-yellow-waxing.png">
@@ -564,6 +568,7 @@
     </section>
     <script>
         $(document).ready(function () {
+            new WOW().init();
             menuClick();
             qaCollapse();
             fixHeader();
