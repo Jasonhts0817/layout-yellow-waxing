@@ -38,6 +38,12 @@
         max-height: 10vh;
         height: 100%;
         margin: 0 1vw;
+        width: 6.7vw;
+        text-align: center;
+    }
+
+    .nav-item-amenities{
+        width: 8.7vw;
     }
 
     .nav-item > a {
@@ -46,10 +52,22 @@
         color: #ffffff;
         display: table-cell;
         vertical-align: middle;
+        width: 100%;
     }
 
-    .nav-item > a:hover {
-        color: #ffffff;
+    .nav-item .nav-link {
+        display: table-cell;;
+    }
+    .nav-item .nav-link-hover {
+        display: none;
+    }
+
+    .nav-item:hover .nav-link {
+        display: none;
+
+    }
+    .nav-item:hover .nav-link-hover {
+        display: table-cell;;
     }
 
     .yellow-waxing {

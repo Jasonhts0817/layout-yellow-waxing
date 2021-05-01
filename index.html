@@ -43,13 +43,34 @@
     <header class="header" id="header">
         <div class="nav-container">
             <ul class="nav-list rwd-pc">
-                <li class="nav-item"><a href="#">關於野裸</a></li>
-                <li class="nav-item"><a href="#">服務介紹</a></li>
-                <li class="nav-item"><a href="#">空間介紹</a></li>
-                <li class="nav-item"><a href="#">設備介紹</a></li>
-                <li class="nav-item"><a href="#">常見問題</a></li>
-                <li class="nav-item"><a href="#">預約分店</a></li>
-                <li class="nav-item"><a href="#">除毛專欄</a></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">ABOUT</a>
+                    <a href="#" class="nav-link-hover">關於野裸</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">SERVICE</a>
+                    <a href="#" class="nav-link-hover">服務介紹</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">SPACE</a>
+                    <a href="#" class="nav-link-hover">空間介紹</a>
+                </li>
+                <li class="nav-item nav-item-amenities">
+                    <a href="#" class="nav-link">AMENITIES</a>
+                    <a href="#" class="nav-link-hover">設備介紹</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Q&A</a>
+                    <a href="#" class="nav-link-hover">常見問題</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">STORE</a>
+                    <a href="#" class="nav-link-hover">預約分店</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">BLOG</a>
+                    <a href="#" class="nav-link-hover">除毛專欄</a>
+                </li>
                 <li class="nav-item">
                     <a href="#">
                         <img class="icon" src="images/yellow-web/01-ig-icon.png">
@@ -594,6 +615,7 @@
                 $menuBtn.toggleClass('active');
                 $menuList.toggleClass('active');
                 header.data('freeze', true);
+                console.log(headerHeight);
                 header.attr('style', 'top: -' + headerHeight + 'px');
                 setTimeout(() => { header.data('freeze', false); }, 2000);
             })
